@@ -69,14 +69,12 @@ input[type=image]:hover::after {
 
 }
 
-.form {
-  width: 70%;
-  margin: auto;
-  text-align: center;
-}
-
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
+}
+
+.retro {
+  border: outset;
 }
