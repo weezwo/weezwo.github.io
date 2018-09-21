@@ -1,0 +1,82 @@
+*:focus {
+    outline: none;
+}
+
+body, html {
+    font-family: 'Noto Serif JP', sans-serif;
+    margin:0;padding:0;height:100%;
+}
+
+.container {
+  /* background-color: #ddd; */
+  /* border-style: outset; */
+  display: block;
+  width: 75%;
+  margin: auto;
+  height: 100%;
+  /* font-family: 'Crimson Text', serif; */
+}
+
+.title {
+  font-family: 'Noto Serif JP', sans-serif;
+  text-align: center;
+  font-size: 160%;
+  margin-bottom: -35px;
+  display: block;
+  height: 100%;
+}
+
+.subtitle{
+  text-align: center;
+  padding: 5px 0;
+  /* font-size: 160%; */
+}
+
+input[type=text], input[type=email] {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 150%;
+  margin: 10px auto;
+  border: none;
+  width: 100%;
+  border-bottom: 2px solid #ddd;
+}
+
+textarea {
+  font-size: 150%;
+  font-family: 'Noto Serif JP', serif;
+  margin: 10px auto;
+  border: none;
+  width: 100%;
+  border-bottom: 2px solid #ddd;
+  resize: vertical;
+
+}
+
+button, input[type=image] {
+  font-size: 150%;
+  font-family: 'Noto Serif JP', serif;
+  /* -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; */
+  background-color: #fff;
+  border: none;
+  display: block;
+  padding: 5px 10px;
+  position: relative;
+  left: 75%;
+}
+
+input[type=image]:hover::after {
+
+}
+
+.form {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
