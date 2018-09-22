@@ -5,6 +5,7 @@
 body, html {
     font-family: 'Noto Serif JP', sans-serif;
     margin:0;padding:0;height:100%;
+    /* font-size: 160%; */
 }
 
 .container {
@@ -14,6 +15,7 @@ body, html {
   width: 75%;
   margin: auto;
   height: 100%;
+  position: relative;
   /* font-family: 'Crimson Text', serif; */
 }
 
@@ -29,12 +31,26 @@ body, html {
 .subtitle{
   text-align: center;
   padding: 5px 0;
-  /* font-size: 160%; */
+  font-size: 160%;
+}
+
+.section {
+  position: relative;
+  border: 1px;
+}
+
+.words {
+  text-align: left;
+}
+
+
+.badges {
+  /* float: right; */
 }
 
 input[type=text], input[type=email] {
   font-family: 'Noto Serif JP', serif;
-  font-size: 150%;
+  font-size: 100%;
   margin: 10px auto;
   border: none;
   width: 100%;
@@ -42,7 +58,7 @@ input[type=text], input[type=email] {
 }
 
 textarea {
-  font-size: 150%;
+  font-size: 100%;
   font-family: 'Noto Serif JP', serif;
   margin: 10px auto;
   border: none;
@@ -52,21 +68,13 @@ textarea {
 
 }
 
-button, input[type=image] {
-  font-size: 150%;
-  font-family: 'Noto Serif JP', serif;
-  /* -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out; */
+input[type=image] {
   background-color: #fff;
   border: none;
   display: block;
   padding: 5px 10px;
   position: relative;
-  left: 75%;
-}
-
-input[type=image]:hover::after {
-
+  left: 85%;
 }
 
 .form {
@@ -79,4 +87,54 @@ input[type=image]:hover::after {
     content: "";
     clear: both;
     display: table;
+}
+
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.words a {
+  color: #777;
+}
+
+a:before {
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 2px;
+ bottom: 0;
+ left: 0;
+ background-color: #000;
+ visibility: hidden;
+ -webkit-transform: scaleX(0);
+ transform: scaleX(0);
+ -webkit-transition: all 0.3s ease-in-out 0s;
+ transition: all 0.3s ease-in-out 0s;
+}
+
+h4 a:hover {
+  color: #000;
+}
+
+h4 a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.top-link {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+}
+
+.top-link a {
+  color: #aaa;
+}
+
+#foreverdolphin {
+  display: inline;
+  padding-right: 15px;
 }

@@ -7,11 +7,13 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
   <body>
-    <div class="title container">
-    <h1>Luisa Scavo</h1>
+    <div class="title container" id="top">
+      <div class="top-link"><a href="#top"><i class="fas fa-2x fa-angle-double-up"></i></a></div>
+      <h1>Luisa Scavo</h1>
   <!-- </div> -->
     <!-- <div class="subtitle container"> -->
       <!-- <hr> -->
@@ -19,59 +21,87 @@
       <!-- <h3>Full Stack Developer</h3>
       <h3>Tech Educator</h3>
       <h3>Friend</h3> -->
-      <h4>About • Projects • Contact</h4>
+      <h4><a href="#about">About</a> • <a href="#projects">Projects</a> • <a href="#contact">Contact</a></h4>
       <!-- <img src="images/balloonbanner.gif"> -->
         <img src="images/dolphinglobe.gif">
+        <p>
+        <a href="https://github.com/weezwo" target="_blank"><i class="fab fa-2x fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/luisa-scavo/" target="_blank"><i class="fab fa-2x fa-linkedin-in"></i></a>
+        <a href="https://luisascavo.wordpress.com" target="_blank"><i class="fab fa-2x fa-wordpress"></i></a>
+      </p>
     </div>
-    <div class="subtitle container" data-aos="zoom-in-right">
+    <div class="subtitle container" id="about">
+      <div class="section" data-aos="zoom-in-right">
       <h2>About</h2>
-      <!-- <img src="images/stardolphin.gif" align="right"> -->
-      <p><i class="fab fa-5x fa-html5"></i> <i class="fab fa-5x fa-css3-alt"></i></p>
-      <p><i class="fas fa-4x fa-gem"></i>
-      <i class="fab fa-5x fa-node-js"></i>
-      <i class="fab fa-5x fa-react"></i>
-      <i class="fab fa-5x fa-python"></i></p>
-      <!-- <p><i class="fas fa-4x fa-gem"></i></p>
-      <p><i class="fab fa-5x fa-node-js"></i></p>
-      <p><i class="fab fa-5x fa-react"></i></p>
-      <p><i class="fab fa-5x fa-python"></i></p> -->
+      <div class="badges">
+        <p><i class="fab fa-3x fa-html5" title="HTML5!"></i>
+        <i class="fab fa-3x fa-css3-alt" title="CSS3!"></i>
+        <i class="fas fa-2x fa-gem" title="Ruby and Ruby on Rails!"></i>
+        <i class="fab fa-3x fa-node-js" title="JavaScript and NodeJS!"></i>
+        <i class="fab fa-3x fa-react" title="React and Redux!"></i>
+        <i class="fab fa-3x fa-python" title="Python!"></i></p>
+      </div>
+
+      <div class="words">
+        <p>I currently teach for <a href="https://flatironschool.com/">Flatiron School</a>'s
+        self-paced Online Software Engineering program, supporting students as
+        they move through the Rails portion of our rigorous curriculum.</p>
+        <img src="images/stardolphin.gif" align="right">
+        <p>I believe in clean, simple web design with an emphasis on clarity and user experience.
+          I believe in dolphins, our Geocities forebears, and the beauty of the web
+          as a medium unlike any other, full of possbilities yet untapped. Let's explore
+          them together.
+        </p>
+        <img src="images/foreverdolphin.gif" id="foreverdolphin" align="left">
+        <p>I have no interest in building the same portfolio site you've seen a
+          million times, but I am extremely interested in building
+          web applications and sites that make the world better (or at least a little brighter).
+        </p>
+      </div>
+    </div>
   </div>
-    <div class="subtitle container" data-aos="zoom-in-left">
+
+
+  <div class="subtitle container" id="projects">
+    <div class="section" data-aos="zoom-in-left">
       <h2>Projects</h2>
+      <div class="words">
+        <ul>
+          <li><a href="http://poembox.herokuapp.com" target="_blank">Poembox</a>
+            (<a href="https://github.com/weezwo/poembox" target="_blank">github</a>)
+            is a community for sharing poetry.</li>
+          <li><a href="http://chore-corps.herokuapp.com" target="_blank">ChoreCorps</a>
+            (<a href="https://github.com/weezwo/chore-corps" target="_blank">github</a>)
+            is a chore tracker for families.</li>
+          <li><a href="http://pixel-click.herokuapp.com" target="_blank">PixelClick</a>
+            (<a href="https://github.com/weezwo/pixel-click" target="_blank">github</a>)
+            is a one-page drawing application with a Rails API backend.</li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 
-  <div class="subtitle container" data-aos="zoom-in-right">
-      <h2>Around the Web</h2>
-      <i class="fab fa-3x fa-github"></i>
-      <i class="fab fa-3x fa-linkedin-in"></i>
-      <i class="fab fa-3x fa-wordpress"></i>
-      <i class="fab fa-3x fa-pied-piper-pp"></i>
-  </div>
-
-  <div class="subtitle container" data-aos="zoom-in-left">
-    <h2>Contact</h2>
-
-    <div class="container form clearfix" data-aos="zoom-out-down">
+  <div class="subtitle container" id="contact">
+    <div class="section" data-aos="zoom-in-left">
+      <h2>Contact</h2>
 
 
-  <form action="https://formspree.io/your@email.com"
-      method="POST" id="contact">
-    <input type="text" name="name" placeholder="Your Name">
-    <input type="email" name="_replyto" placeholder="Your Email">
-     <textarea name="message" form="contact" rows="10" placeholder="Your Message"></textarea>
-     <br>
-    <input type="image" name="submit" src="images/laughemail.gif">
-  </form>
-  </div>
-  </div>
+      <form action="https://formspree.io/luisascavo@gmail.com"
+        method="POST" id="contact" class="clearfix" data-aos="zoom-out-down">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="_replyto" placeholder="Your Email">
+        <textarea name="message" form="contact" rows="10" placeholder="Your Message"></textarea>
+        <br>
+        <input type="image" name="submit" src="images/laughemail.gif">
+      </form>
+        <footer><i class="fas fa-heart"></i>, Luisa.</footer>
+      </div>
+    </div>
 
 
-
-  Copyright Luisa Scavo
-
-
-  <script>
-  AOS.init();
-</script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
